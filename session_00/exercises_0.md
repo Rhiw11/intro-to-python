@@ -44,7 +44,7 @@ Before you start, make sure that you are using the Shell 🐚 (not the console).
 
 2. Create a Markdown file called "my_markdown_recipe" using `touch <file_name.md>`.
 
-3. Inside the "my_markdown_recipe.md" file, type a recipe you like using the Markdown syntax. If you don't have any ideas, or writing up in Markdown seems too much of a chore, just ask [ChatGPT](https://chat.openai.com/) to write one for you (Ex: "Come up with a recipe in markdown format."), then paste it into your file. 
+3. Inside the "my_markdown_recipe.md" file, type a recipe you like using the Markdown syntax. If you don't have any ideas, or writing up in Markdown seems too much of a chore, just ask [ChatGPT](https://chat.openai.com/) to write one for you), then paste it into your file. 
     - When you are done, click on the "open preview" option to see the formatted version.
 
 Great job on getting so far, just one more section to go!
