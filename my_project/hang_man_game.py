@@ -2,7 +2,6 @@
 
 #Computer needs to choose random word from the list that the end user will guess
 import random
-import hangman_stages
 
 words = ["apple","beach","brain","bread","brush","chair","chest","chord","click","clock","cloud","dance","diary","drink","earth","flute","fruit","ghost","grape","green","happy","heart","house","juice","light","money","music","party","pizza","plant","radio","river","salad","sheep","shoes","smile","snack","snake","spice","spoon","storm","table","toast","tiger","train","water","whale","wheel","woman","world","write","youth"]
 
@@ -21,15 +20,15 @@ def return_word(hangman_word):
         else:  
           print (" _ ",end="")
   
-# Instructions + welcme 
+# Instructions + welcome 
 print("\nHello! Welcome to the game of hangman.\n\nCan you guess the word:\n\n" + str(intro) + "\n\nIf you make 6 mistakes you will lose!\n\nGood luck...")
 
-print(hangman_word)
+#print(hangman_word)
 
 # print("Hello user, welcome to the game of Hangman! Insert instructions ")
 
 while guesses_remaining >= 1:
-    guess = input(str("\n\nPlease guess a letter (lowercase): ")).lower()  
+    guess = input(str("\n\nPlease guess a letter: ")).lower()  
     
     if guess in letters_guessed:
       print("\nHmm that letter's already been guessed, try again...\n")
