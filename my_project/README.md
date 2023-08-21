@@ -13,9 +13,9 @@ The user can make up to 6 mistakes; once all attempts are used, the user will lo
 
 ## How to play the game
 
-* The player starts the game by moving their current directpry to the location of the file, then running the file 'hang_man_game.py' in Shell with:
+* The player starts the game by moving their current directpry to the location of the file, then running the file 'hangman_game.py' in Shell with:
   ```
-  python hang_man_game.py
+  python hangman_game.py
 
   ```
 * The Shell will display the instructions of the game to the player and ask them to input a guess:

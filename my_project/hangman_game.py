@@ -11,6 +11,7 @@ guesses_remaining = 6
 letters_guessed = []
 intro = (" _ " * len(hangman_word))
 hangman_letter = False
+alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 
 #functions for hangman
 def return_word(hangman_word):
@@ -40,15 +41,14 @@ while guesses_remaining >= 1:
       return_word(hangman_word)  
       
   
-    elif guess not in hangman_word:
+    elif guess not in alphabet:
+      print("Hmm, that doesn't look right... please enter a letter")
+      
+    else:
       guesses_remaining -= 1
       letters_guessed.append(guess)
       print("Oh dear, that's not in the word! You have " +     str(guesses_remaining) + " guesses remaining.\n\nHere's the word so far:\n\n")
       return_word(hangman_word) 
-      
-
-    else:
-      print("Hmm, that doesn't look right... please enter a letter")
 
     if guesses_remaining == 0:
       print("\n\nOh no, you lost!\nThe word you were looking for was:\n\n" + str(hangman_word).upper() + "\n\nBetter luck next time!")
